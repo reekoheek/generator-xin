@@ -1,8 +1,7 @@
-'use strict';
-var Generator = require('yeoman-generator');
-var chalk = require('chalk');
-var yosay = require('yosay');
-var path = require('path');
+const Generator = require('yeoman-generator');
+const chalk = require('chalk');
+const yosay = require('yosay');
+const path = require('path');
 
 module.exports = Generator.extend({
   prompting() {
@@ -11,7 +10,7 @@ module.exports = Generator.extend({
       'Welcome to the super ' + chalk.red('generator-xin') + ' generator!'
     ));
 
-    var prompts = [
+    const prompts = [
       {
         type: 'input',
         name: 'name',
